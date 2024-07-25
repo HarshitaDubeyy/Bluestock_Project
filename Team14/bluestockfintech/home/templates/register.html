@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register IPO Details</title>
+    <link rel="stylesheet" href="/static/css/register.css">
+</head>
+
+<body>
+    <div class="separator"></div>
+    <div class="main">
+        <div class="left">
+            <div class="logo">
+                <img src="/static/iconss/bf.svg" alt="" width="24px">
+                <p>Bluestock Fintech</p>
+            </div>
+            <div class="menu">
+                <p>MENU</p>
+                <div class="menu-items">
+                    <img src="/static/iconss/chart.svg" alt="" width="19px">
+                    <p>Food Order</p>
+                </div>
+                <div class="menu-item1">
+                    <img src="/static/iconss/buy.svg" alt="" width="19px">
+                    <p>Manage IPO</p>
+                </div>
+                <div class="menu-items">
+                    <img src="/static/iconss/document.svg" alt="" width="19px">
+                    <p>IPO Subscription</p>
+                </div>
+                <div class="menu-items">
+                    <img src="/static/iconss/chat.svg" alt="" width="19px">
+                    <p>IPO Allotment</p>
+                </div>
+                <br>
+                <p>OTHERS</p>
+                <div class="menu-items">
+                    <img src="/static/iconss/settings.svg" alt="" width="19px">
+                    <p>Settings</p>
+                </div>
+                <div class="menu-items">
+                    <img src="/static/iconss/wallet.svg" alt="" width="19px">
+                    <p>API Manager</p>
+                </div>
+                <div class="menu-items">
+                    <img src="/static/iconss/profile.svg" alt="" width="19px">
+                    <p>Accounts</p>
+                </div>
+                <div class="menu-items">
+                    <img src="/static/iconss/help.svg" alt="" width="19px">
+                    <p>Help</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="top">
+                <div class="search">
+                    <input type="text" placeholder="Search">
+                    <button type="submit"><img src="/static/iconss/search.svg" alt=""></button>
+                </div>
+                <div class="info">
+                    <div class="emoticon">
+                        <p>V</p>
+                    </div>
+                    <p>Hi, Vishal</p>
+                    <img src="/static/iconss/down_arrow.svg" alt="" width="20px">
+                    <img src="/static/iconss/notif.svg" alt="">
+                    <img src="/static/iconss/dot.svg" alt="" class="notification">
+                </div>
+            </div>
+            <div class="bottom">
+                <form action="/submit_form" method="POST">
+                    <div class="header">
+                        <span>Upcoming IPO Information</span>
+                        <div class="buttons">
+                            <button type="submit" value="Register" class="reg-btn">Register</button>
+                            <button type="submit" value="Cancel" class="cancel-btn">Cancel</button>
+                        </div>
+                    </div>
+                    <span>Manage your IPO Details</span>
+                    <br><br>
+                    <div class="center">
+                        <div class="sidebar">
+                            <div class="side-item1">
+                                <img src="/static/iconss/i.svg" alt="">
+                                <span>IPO Information</span>
+                            </div>
+                            <div class="side-item2">
+                                <img src="/static/iconss/note.svg" alt="">
+                                <span>IPO Info</span>
+                            </div>
+                        </div>
+                        <div class="vertical-sep"></div>
+                        <div class="details">
+                            <p>IPO Information</p>
+                            <p>Enter IPO Details</p>
+                            <br>
+                            <div class="sep2"></div>
+                            <br>
+                            <span id="cl">Company Logo</span>
+                            <br><br>
+                            <div class="company-details">
+                                <img src="{{ company_logo_path }}" alt="">
+                                <div class="det">
+                                    <span id="name">NSE India</span>
+                                    <span>Tech Lead</span>
+                                    <span>Pune</span>
+                                </div>
+                                <input type="submit" value="Upload Logo" id="upload">
+                                <input type="submit" value="Delete" id="delete">
+                            </div>
+                            <br>
+                            <br>
+                            <div class="part1">
+                                <div class="enter">
+                                    <span class="title">Company Name</span>
+                                    <input type="text" class="field" placeholder="Not Issued" name="company_name">
+                                </div>
+                                <div class="enter">
+                                    <span class="title">Price Band</span>
+                                    <input type="text" class="field" placeholder="Not Issued" name="price_band">
+                                </div>
+                                <div class="enter">
+                                    <span class="title">Open</span>
+                                    <input type="date" class="field" placeholder="Not Issued" name="open">
+                                </div>
+                                <div class="enter">
+                                    <span class="title">Close</span>
+                                    <input type="date" class="field" placeholder="Not Issued" name="close">
+                                </div>
+                                <div class="enter">
+                                    <span class="title">Issue Size</span>
+                                    <input type="text" class="field" placeholder="2300 Cr." name="issue_size">
+                                </div>
+                                <div class="enter">
+                                    <span class="title">Issue Type</span>
+                                    <select name="issue_type" class="field">
+                                        <option value="Book Built">Book Built</option>
+                                    </select>
+                                </div>
+                                <div class="enter">
+                                    <span class="title">Listing Date</span>
+                                    <input type="date" class="field" placeholder="Not Issued" name="listing_date">
+                                </div>
+                                <div class="enter">
+                                    <span class="title">Status</span>
+                                    <select name="status" class="field">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <br>
+                            <span id="new">NEW LISTED IPO DETAILS(WHEN IPO GET LISTED)</span>
+                            <br><br>
+                            <div class="part1">
+                                <div class="enter">
+                                    <span class="title">IPO Price</span>
+                                    <input type="text" class="field" placeholder="₹ 383" name="ipo_price">
+                                </div>
+                                <div class="enter">
+                                    <span class="title">Listing Price</span>
+                                    <input type="text" class="field" placeholder="₹ 435" name="listing_price">
+                                </div>
+                                <div class="enter">
+                                    <span class="title">Listing Gain</span>
+                                    <input type="text" class="field" placeholder="13.58 %" name="listing_gain">
+                                </div>
+                                <div class="enter">
+                                    <span class="title">CMP</span>
+                                    <input type="text" class="field" placeholder="₹ 410" name="cmp">
+                                </div>
+                                <div class="enter">
+                                    <span class="title">Current Return</span>
+                                    <input type="text" class="field" placeholder="7.05 %" name="current_return">
+                                </div>
+                                <div class="enter">
+                                    <span class="title">RHP</span>
+                                    <input type="text" class="field" placeholder="Enter RHP PDF Link" name="rhp">
+                                </div>
+                                <div class="enter">
+                                    <span class="title">DRHP</span>
+                                    <input type="text" class="field" placeholder="Enter DRHP PDF Link" name="drhp">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

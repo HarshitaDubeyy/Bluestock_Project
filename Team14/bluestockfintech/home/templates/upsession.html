@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPO Upcoming Screen</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/upsession.css' %}">
+</head>
+
+<body>
+    <div class="separator"></div>
+    <div class="main">
+        <div class="left">
+            <div class="logo">
+                <img src="{% static 'iconss/bf.svg' %}" alt="" width="24px">
+                <p>Bluestock Fintech</p>
+            </div>
+            <div class="menu">
+                <p>MENU</p>
+                <div class="menu-items">
+                    <img src="{% static 'iconss/chart.svg' %}" alt="" width="19px">
+                    <p>Food Order</p>
+                </div>
+                <div class="menu-item1">
+                    <img src="{% static 'iconss/buy.svg' %}" alt="" width="19px">
+                    <p>Manage IPO</p>
+                </div>
+                <div class="menu-items">
+                    <img src="{% static 'iconss/document.svg' %}" alt="" width="19px">
+                    <p>IPO Subscription</p>
+                </div>
+                <div class="menu-items">
+                    <img src="{% static 'iconss/chat.svg' %}" alt="" width="19px">
+                    <p>IPO Allotment</p>
+                </div>
+                <br>
+                <p>OTHERS</p>
+                <div class="menu-items">
+                    <img src="{% static 'iconss/settings.svg' %}" alt="" width="19px">
+                    <p>Settings</p>
+                </div>
+                <div class="menu-items">
+                    <img src="{% static 'iconss/wallet.svg' %}" alt="" width="19px">
+                    <p>API Manager</p>
+                </div>
+                <div class="menu-items">
+                    <img src="{% static 'iconss/profile.svg' %}" alt="" width="19px">
+                    <p>Accounts</p>
+                </div>
+                <div class="menu-items">
+                    <img src="{% static 'iconss/help.svg' %}" alt="" width="19px">
+                    <p>Help</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="top">
+                <div class="search">
+                    <input type="text" placeholder="Search">
+                    <button type="submit"><img src="{% static 'iconss/search.svg' %}" alt=""></button>
+                </div>
+                <div class="info">
+                    <div class="emoticon">
+                        <p>V</p>
+                    </div>
+                    <p>Hi, Vishal</p>
+                    <img src="{% static 'iconss/down_arrow.svg' %}" alt="" width="20px">
+                    <img src="{% static 'iconss/notif.svg' %}" alt="">
+                    <img src="{% static 'iconss/dot.svg' %}" alt="" class="notification">
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="upper">
+                    <p>Upcoming IPO | Dashboard</p>
+                    <input type="submit" class="view-page" value="View Page">
+                </div>
+                <table id="myTable">
+                    <thead>
+                        <tr>
+                            <th>Company</th>
+                            <th>Price Band</th>
+                            <th>Open</th>
+                            <th>Close</th>
+                            <th>Issue Size</th>
+                            <th>Issue Type</th>
+                            <th>Listing Date</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                            <th>View</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for record in records %}
+                        <tr>
+                            <td>{{ record.company_name }}</td>
+                            <td>{{ record.price_band }}</td>
+                            <td>{{ record.open }}</td>
+                            <td>{{ record.close }}</td>
+                            <td>{{ record.issue_size }}</td>
+                            <td>{{ record.issue_type }}</td>
+                            <td>{{ record.listing_date }}</td>
+                            <td>
+                                <div class="{{ record.status_class }}">
+                                    {{ record.status_text }}
+                                </div>
+                            </td>
+                            <td>
+                                <input type="submit" class="update" value="Update">
+                            </td>
+                            <td>
+                                <img src="{% static 'iconss/trash.svg' %}" alt="">&nbsp;
+                                <img src="{% static 'iconss/eye.svg' %}" alt="">
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                <br>
+                <div class="pagination">
+                    <a href="?page={{ page|add:"-1" }}" class="page" {% if page <= 1 %}disabled{% endif %}>&laquo;</a>
+                    {% for p in total_pages_range %}
+                        <a href="?page={{ p }}" class="page" {% if p == page %}style="font-weight:bold;"{% endif %}>{{ p }}</a>
+                    {% endfor %}
+                    <a href="?page={{ page|add:"1" }}" class="page" {% if page >= total_pages %}disabled{% endif %}>&raquo;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

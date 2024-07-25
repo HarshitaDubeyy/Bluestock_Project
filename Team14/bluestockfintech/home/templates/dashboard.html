@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPO Admin Dashboard</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+</head>
+<body>
+    <div class="separator"></div>
+    <div class="main">
+        <div class="left">
+            <div class="logo">
+                <img src="{% static 'iconss/bf.svg' %}" alt="" width="24px">
+                <p>Bluestock Fintech</p>
+            </div>
+            <div class="menu">
+                <p>MENU</p>
+                <div class="menu-item1">
+                    <img src="{% static 'iconss/chart.svg' %}" alt="" width="19px">
+                    <p>Dashboard</p>
+                </div>
+                <div class="menu-items">
+                    <img src="{% static 'iconss/buy.svg' %}" alt="" width="19px">
+                    <p>Manage IPO</p>
+                </div>
+                <div class="menu-items">
+                    <img src="{% static 'iconss/document.svg' %}" alt="" width="19px">
+                    <p>IPO Subscription</p>
+                </div>
+                <div class="menu-items">
+                    <img src="{% static 'iconss/chat.svg' %}" alt="" width="19px">
+                    <p>IPO Allotment</p>
+                </div>
+                <br>
+                <p>OTHERS</p>
+                <div class="menu-items">
+                    <img src="{% static 'iconss/settings.svg' %}" alt="" width="19px">
+                    <p>Settings</p>
+                </div>
+                <div class="menu-items">
+                    <img src="{% static 'iconss/wallet.svg' %}" alt="" width="19px">
+                    <p>API Manager</p>
+                </div>
+                <div class="menu-items">
+                    <img src="{% static 'iconss/profile.svg' %}" alt="" width="19px">
+                    <p>Accounts</p>
+                </div>
+                <div class="menu-items">
+                    <img src="{% static 'iconss/help.svg' %}" alt="" width="19px">
+                    <p>Help</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="top">
+                <div class="search">
+                    <input type="text" placeholder="Search">
+                    <button type="submit"><img src="{% static 'iconss/search.svg' %}" alt=""></button>
+                </div>
+                <div class="info">
+                    <div class="emoticon">
+                        <p>V</p>
+                    </div>
+                    <p>Hi, Vishal</p>
+                    <img src="{% static 'iconss/down_arrow.svg' %}" alt="" width="20px">
+                    <img src="{% static 'iconss/notif.svg' %}" alt="">
+                    <img src="{% static 'iconss/dot.svg' %}" alt="" class="notification">
+                </div>
+            </div>
+
+            <div class="bottom">
+                <div class="card1">
+                    <p>Dashboard</p>
+                    <br>
+                    <p>IPO Dashboard India</p>
+                    <img src="{% static 'iconss/up_arrow.svg' %}" alt="" height="10px" width="7.12px">
+                    <span style="color: rgba(50, 209, 109, 1);">{{ gain_ipo }}</span>
+                    <span>IPO in Gain</span>
+                    <div class="circle blue-circle">
+                        <span>{{ gain_ipo }}</span>
+                        <p>IPO in Gain</p>
+                    </div>
+                    <div class="arc blue-arc"></div>
+                    <div class="circle orange-circle">
+                        <span>{{ total_ipo }}</span>
+                        <p>Total IPO</p>
+                    </div>
+                    <div class="arc orange-arc"></div>
+                    <div class="circle purple-circle">
+                        <span>{{ loss_ipo }}</span>
+                        <p>IPO in Loss</p>
+                    </div>
+                    <div class="arc purple-arc"></div>
+                </div>
+                <div class="vertical-sep1"></div>
+                <div class="card2">
+                    <br><br>
+                    <p>Quick Links</p>
+                    <span>Adipiscing elit, sed do eiusmod tempor</span>
+                    <div class="links">
+                        <br>
+                        <a href="https://www.nseindia.com/">
+                            <div class="link-item">
+                                <div class="image">
+                                    <img src="{% static 'iconss/nse.png' %}" alt="" width="28px">
+                                </div>
+                                <div class="link-text">
+                                    <span>NSE India</span>
+                                    <span>Visit Now</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.bseindia.com/">
+                            <div class="link-item">
+                                <div class="image">
+                                    <img src="{% static 'iconss/bse.png' %}" alt="">
+                                </div>
+                                <div class="link-text">
+                                    <span>BSE India</span>
+                                    <span>Visit Now</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.sebi.gov.in/">
+                            <div class="link-item">
+                                <div class="image">
+                                    <img src="{% static 'iconss/sebi.png' %}" alt="">
+                                </div>
+                                <div class="link-text">
+                                    <span>SEBI</span>
+                                    <span>Visit Now</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.moneycontrol.com/">
+                            <div class="link-item">
+                                <div class="image">
+                                    <img src="{% static 'iconss/mon_ctrl.png' %}" alt="">
+                                </div>
+                                <div class="link-text">
+                                    <span>Money Control</span>
+                                    <span>Visit Now</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="vertical-sep2"></div>
+                <div class="card3">
+                    <br><br>
+                    <p>Main Board IPO</p>
+                    <div class="button">
+                        <span>From 01 Jan 2024</span>
+                        <input type="submit" value="View Report">
+                    </div>
+                    <br><br>
+                    <div class="centre">
+                        <div class="pie-chart">
+                            <img src="{% url 'chart' %}" alt="">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card3-footer">
+                        <div class="upcoming"></div>
+                        <p>Upcoming<br>{{ coming }}</p>
+                        <div class="new-listed"></div>
+                        <p>New Listed<br>{{ new_listed }}</p>
+                        <div class="ongoing"></div>
+                        <p>Ongoing<br>{{ ongoing }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
