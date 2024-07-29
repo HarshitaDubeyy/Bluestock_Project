@@ -1,0 +1,813 @@
+/* Footer */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+  background-color: #f7f5f4;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(Poppins-Regular.ttf);
+}
+
+@media (max-width:750px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+    background-color: #f7f5f4;
+  }
+
+  /* Navbar */
+  .navbar {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    border-bottom: 1px rgb(189, 185, 185) solid;
+    align-items: center;
+  }
+
+  .navbar img {
+    display: none;
+  }
+
+  .grip{
+    background-image: url("./grip-vertical.png");
+  }
+
+  .icon {
+    height: 55px;
+    width: 55px;
+    background-image: url(Rectangle\ 13.png);
+    background-size: cover;
+  }
+
+  .name {
+    height: 19px;
+    width: 150px;
+    background-image: url(BLUESTOCK.png);
+    background-size: cover;
+    margin-left: 10px;
+  }
+
+  /* Heading */
+  .main {
+    background-color: #f7f5f4;
+    width: 100%;
+    height: 100%;
+  }
+
+  .bar {
+    display: flex;
+    flex-direction: column;
+    margin-left: 38px;
+    padding-top: 10px;
+    background-color: #f7f5f4;
+  }
+
+  .L1 {
+    display: flex;
+    margin-top: 2vmax;
+    margin-bottom: 2vmax;
+    /* background-color: #fff; */
+    background-color: #f7f5f4;
+  }
+
+  .T0 {
+    color: rgb(102, 55, 255);
+    font-size: 0.7rem;
+    background-color: #f7f5f4;
+  }
+
+  .T1 {
+    color: black(255, 255, 255);
+    font-size: 0.7rem;
+    background-color: #f7f5f4;
+  }
+
+  .T2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #f7f5f4;
+    margin-bottom: 2vmax;
+  }
+
+  .T3 {
+    font-size: 0.8rem;
+    background-color: #f7f5f4;
+  }
+
+  .BOX {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10vmax 20vh;
+    gap: 10vh;
+
+  }
+
+  .BOX .B1 b {
+    background-color: #fff;
+  }
+
+  .BOX .B2 b {
+    background-color: #ef5335;
+  }
+
+  .a1 {
+    background-color: #fff;
+    color: gray;
+    margin-bottom: 1vh;
+    font-size: small;
+  }
+
+  .a2 {
+    font-style: bold;
+    font-size: small;
+  }
+
+  .P1,
+  .P2,
+  .P3,
+  .P4,
+  .P5,
+  .P6 {
+    background-color: #fff;
+  }
+
+  .BOX1 {
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+
+  .D1 {
+    border-radius: 10px;
+    background-color: white;
+    padding: 2vmax;
+  }
+
+  .com-icon1 {
+    background-image: url(Novs_icon.png);
+    height: 45px;
+    width: 105px;
+  }
+
+  .D1 .comp {
+    color: #4850eb;
+    font-size: 1.1rem;
+    background-color: #fff;
+    margin-bottom: 0vmax;
+    padding: 0 5vh;
+  }
+
+  .elem {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+    background-color: #fff;
+    margin: 1vh 3vmax;
+    padding: 4vh;
+    gap: 6vmax;
+    align-content: center;
+  }
+
+  .BOX2 {
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .com-icon2 {
+    background-image: url(Epack_Icon.png);
+    height: 60px;
+    width: 60px;
+
+  }
+
+  .BOX3 {
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  p {
+    background-color: #fff;
+  }
+
+  .com-icon3 {
+    background-image: url(RK.png);
+    height: 45px;
+    width: 105px;
+  }
+
+  .BOX4 {
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .com-icon4 {
+    background: url(OYO.png);
+    background-size: cover;
+    height: 40px;
+    width: 70px;
+  }
+
+  .BOX5 {
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .com-icon5 {
+    background-image: url(Boat.png);
+    height: 45px;
+    width: 80px;
+  }
+
+  .BOX6 {
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .com-icon6 {
+    background-image: url(Kids.png);
+    height: 45px;
+    width: 50px;
+  }
+
+  .BOX7 {
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .com-icon7 {
+    background-image: url(OLA.png);
+    height: 45px;
+    width: 105px;
+  }
+
+  .BOX8 {
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .com-icon8 {
+    background-image: url(MObi.png);
+    height: 50px;
+    width: 55px;
+  }
+
+  .BOX9 {
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .com-icon9 {
+    background-image: url(IXIGO.png);
+    height: 45px;
+    width: 105px;
+  }
+
+  .BOX10 {
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .com-icon10 {
+    background-image: url(CMR.png);
+    height: 45px;
+    width: 105px;
+  }
+
+  .BOX11 {
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .com-icon11 {
+    background-image: url(Well.png
+);
+    height: 45px;
+    width: 105px;
+  }
+
+  .BOX12 {
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .com-icon12 {
+    background-image: url(PKH.png);
+    height: 45px;
+    width: 105px;
+  }
+
+  /* QUESTIONS */
+  .question {
+    margin-top: 0vh;
+    margin-left: 6vmax;
+  }
+
+  .ques-H1 {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  .ques-H2 {
+    font-size: 0.8rem;
+    margin-bottom: 4vmax;
+  }
+
+  .Qs {
+    /* margin-top: 50px; */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Q1 {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    margin-bottom: 5vmax;
+    height: 50px;
+    width: 95%;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px rgb(186, 185, 185);
+  }
+
+  .dropbtn {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 4px;
+    color: #5C8BFE;
+    font-weight: bold;
+    padding: 12px;
+    font-size: 1.2rem;
+    border: none;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    width: 700px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: white;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .tasks {
+    display: none;
+  }
+
+  .signin,
+  .signup {
+    display: none;
+  }
+
+  .navbar img {
+    display: block;
+    background-color: #fff;
+    right: 5%;
+    position: absolute;
+  }
+
+  .com-icon1,
+  .com-icon2,
+  .com-icon3,
+  .com-icon4,
+  .com-icon5,
+  .com-icon6,
+  .com-icon7,
+  .com-icon8,
+  .com-icon9,
+  .com-icon10,
+  .com-icon11,
+  .com-icon12 {
+    /* width: 60vw; */
+    /* height: 20vmax; */
+    /* height: 10vh; */
+    background-size: cover;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 4vmax;
+  }
+
+  .D1 {
+    display: block;
+    width: 70vw;
+    height: 25vh;
+  }
+
+  .BOX1,
+  .BOX2,
+  .BOX3,
+  .BOX4,
+  .BOX5,
+  .BOX6,
+  .BOX7,
+  .BOX8,
+  .BOX9,
+  .BOX10,
+  .BOX11,
+  .BOX12 {
+    width: 87vw;
+    height: 80vh;
+    box-shadow: 2px 2px 1px rgb(196, 192, 192);
+  }
+
+  .B1,
+  .B2 {
+    display: none;
+  }
+
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 20px;
+  margin: 10vh;
+  background-color: #fff;
+}
+
+.container {
+  background-color: #fff;
+}
+
+.column {
+  text-align: left;
+  margin-right: 20px;
+  font-size: 12px;
+  opacity: 0.8;
+  /* add a little transparency to the text */
+  line-height: 3vh;
+  background-color: #fff;
+
+}
+
+.column h3 {
+  background-color: #fff;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+  opacity: 0.8;
+  /* add a little transparency to the text */
+  margin-top: 4vh;
+  background-color: #fff;
+}
+
+.column li {
+  margin-bottom: 2.3vh;
+  font-size: 14px;
+  opacity: 0.9;
+  /* add a little transparency to the text */
+  background-color: #fff;
+}
+
+#container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.logo-container {
+  margin: 10vh;
+  background-color: #fff;
+}
+
+.logo-container a {
+  background-color: #fff;
+}
+
+.logo h1 {
+  font-size: 24px;
+  /* increase the font size of the h1 text */
+  font-weight: bold;
+  /* make the text bold */
+  margin-bottom: 5px;
+  /* add some space between the text and the logo */
+  background-color: #fff;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+.social-links a {
+  margin-right: 10px;
+  background-color: #fff;
+}
+
+.social-links img {
+  width: 30px;
+  /* increase the width to 30px */
+  height: 30px;
+  /* increase the height to 30px */
+  margin-right: 0px;
+  background-color: #fff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+.logo h1 {
+  background-color: #fff;
+}
+
+.logo img {
+  width: 50px;
+  margin: 0;
+  display: flex;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+
+}
+
+.logo-container {
+  background-color: #fff;
+}
+
+.footer-text {
+  text-align: left;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+.footer-text p {
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+.content {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.content a {
+  background-color: #fff;
+}
+
+
+.startup-india-logo {
+  width: 250px;
+  height: 80px;
+  margin: 0;
+  vertical-align: middle;
+  background-color: #fff;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3vh;
+  background-color: white;
+  font-size: 14px;
+  opacity: 0.9;
+  /* add a little transparency to the text */
+  border-top: 3px solid gray;
+  margin: 0 5vw;
+}
+
+.footer p {
+  margin-bottom: 0;
+  background-color: #fff;
+}
+
+.footer-text p {
+  font-size: 1.2vmax;
+  /* increase the font size to 18px */
+  font-family: 'Poppins', sans-serif;
+  /* use Poppins font family */
+  opacity: 0.8;
+  /* add a little transparency to the text */
+  margin: 10px;
+  background-color: #fff;
+}
+
+
+#one {
+  margin-bottom: 4.5vh;
+  background-color: #fff;
+}
+
+#two {
+  background-color: #fff;
+}
+
+.content p {
+  font-size: 1.1vw;
+  /* increase the font size to 18px */
+  width: 93%;
+  font-family: 'Poppins', sans-serif;
+  /* use Poppins font family */
+  opacity: 0.8;
+  /* add a little transparency to the text */
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+.footer-right {
+  background-color: #fff;
+}
+
+.footer-left {
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+  }
+
+  .container {
+    width: 100vw;
+    height: 100vh;
+  }
+
+
+
+  #container1 {
+    margin: 0vmax;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(33vmax, 1fr));
+    background-color: #fff;
+  }
+
+  #a1,
+  #a2,
+  #a3,
+  #a4 {
+    width: 50%;
+    margin: 5vw 3vmax;
+    margin-bottom: 4vmax;
+    background-color: #fff;
+  }
+
+  .column {
+    background-color: #fff;
+  }
+
+  #a5 {
+    /* width: 50%; */
+    margin: 3vw 3vmax;
+    margin-bottom: 3vmax;
+    background-color: #fff;
+  }
+
+  .column h3 {
+    font-size: medium;
+    line-height: 8vmax;
+    opacity: 0.8;
+  }
+
+  .column ul li {
+    list-style-type: none;
+    opacity: 1;
+    line-height: 4vmax;
+    color: grey;
+    background-color: #fff;
+  }
+  
+  .column ul {
+    background-color: #fff;
+  }
+
+  #container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+  }
+
+  .logo-container {
+    padding: 0 5vmax;
+    margin: 0;
+    width: 100%;
+  }
+
+  .logo img {
+    width: 8vmax;
+  }
+
+  .logo h1 {
+    font-size: 3.9vmax;
+  }
+
+  #one {
+    margin: 2vmax 0;
+    margin-bottom: 3vmax;
+    opacity: 0.7;
+  }
+
+  #two {
+    opacity: 0.7;
+  }
+
+  p img {
+    width: 27vmax;
+    margin: 3vmax 0;
+    padding: 0;
+    left: 0;
+  }
+
+  .content {
+    margin: 3vmax;
+    margin-top: 0;
+    background-color: #fff;
+
+  }
+
+  .content p {
+    margin: 3vmax;
+    margin-bottom: 0;
+    color: gray;
+    opacity: 1;
+    font-size: small;
+    line-height: 23px;
+  }
+
+  .footer {
+    border-top: 3px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1vmax;
+    line-height: 5vmax;
+    color: rgba(104, 103, 103, 0.979);
+    font-size: medium;
+    margin: 0 1vw;
+    background-color: #fff;
+  }
+
+  .footer-text p {
+    font-size: smaller;
+  }
+
+  .footer-text p img {
+    width: 30vmax;
+  }
+
+  .footer-right {
+    font-size: medium;
+  }
+
+  .social-links {
+    width: 100%;
+    left: 0;
+  }
+}

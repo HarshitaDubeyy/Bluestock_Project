@@ -1,0 +1,180 @@
+
+{% load static %}
+{% block title %}
+  <h1>DETAILS OF THE IPO</h1>
+{% endblock title %}
+
+{% block main-content %}
+   <div class="navbar">
+      <div class="icon"></div>
+      <div class="name"></div>
+      <div class="tasks">
+        <div class="task2">PRODUCTS</div>
+        <div class="task2">PRICING</div>
+        <div class="task2">MEDIA</div>
+        <div class="task2">SUPPORT</div>
+      </div>
+      <div class="signin">Sign in</div>
+      <button class="signup">Sign Up Now</button>
+      
+      
+    </div>
+   <div class="container">
+     <div class="row flex justify-content-between">
+       <div class="detail col-lg-5">
+        <h2 style="font-family: Georgia;">PRODUCT NAME - {{product.name}}</h2>
+        <h3 style="font-family: Georgia; font-size: 20px;">ORGANISATION - {{product.Brand}}</h3>
+        {% comment %} <h5>PRICE BAND => {{product.Price_Band}}</h5>
+        <h5>OPEN => {{product.Open}}</h5>
+        <h5>CLOSE => {{product.Close}}</h5>
+        <h5>ISSUE SIZE => {{product.Issue_size}}</h5>
+        <h5>ISSUE TYPE => {{product.Issue_Type}}</h5>
+        <h5>LISTING DATE => {{product.Listing_Date}}</h5> {% endcomment %}
+       </div>
+       <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">PROPERTIES</th>
+      <th scope="col">DETAILS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="bold">PRICE BAND</td>
+      <td> {{product.Price_Band}}</td>
+    </tr>
+    <tr>
+      <td>OPEN</td>
+      <td>{{product.Open}}</td>
+    </tr>
+    <tr>
+      <td>CLOSE</td>
+      <td>{{product.Close}}</td>
+    </tr>
+    <tr>
+      <td>ISSUE SIZE</td>
+      <td>{{product.Issue_size}}</td>
+    </tr>
+    <tr>
+      <td>ISSUE TYPE</td>
+      <td>{{product.Issue_Type}}</td>
+    </tr>
+    <tr>
+      <td>LISTING DATE</td>
+      <td>{{product.Listing_Date}}</td>
+    </tr>
+    
+    <!-- Add more rows as needed -->
+  </tbody>
+</table>
+   </div>
+{% endblock main-content %}
+<style>
+  * {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+    background-color: #f7f5f4;
+  }
+
+  /* Navbar */
+  .navbar {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    border-bottom: 1px rgb(189, 185, 185) solid;
+    align-items: center;
+    background-color: #fff;
+  }
+
+  .navbar img {
+    display: none;
+  }
+  .icon {
+    height: 55px;
+    width: 55px;
+    background-image: url('../static/Rectangle 13.png');
+    background-size: cover;
+    background-color: #f7f5f4;
+  }
+
+  .name {
+    height: 19px;
+    width: 150px;
+    background-image: url('../static/BLUESTOCK.png');
+    background-size: cover;
+    margin-left: 10px;
+    background-color: #fff;
+  }
+  .bar {
+    display: flex;
+    flex-direction: column;
+    margin-left: 38px;
+    padding-top: 10px;
+    background-color: #f7f5f4;
+  }
+
+  .L1 {
+    display: flex;
+    margin-top: 2vmax;
+    margin-bottom: 2vmax;
+    /* background-color: #fff; */
+    background-color: #f7f5f4;
+  }
+
+  .T0 {
+    color: rgb(102, 55, 255);
+    font-size: 0.7rem;
+    background-color: #f7f5f4;
+  }
+
+  .T1 {
+    color: black(255, 255, 255);
+    font-size: 0.7rem;
+    background-color: #f7f5f4;
+  }
+
+  .T2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #f7f5f4;
+    margin-bottom: 2vmax;
+  }
+
+  .T3 {
+    font-size: 0.8rem;
+    background-color: #f7f5f4;
+  }
+  .tasks {
+    display: none;
+  }
+
+  .signin,
+  .signup {
+    display: none;
+  }
+
+  .navbar img {
+    display: block;
+    background-color: #fff;
+    right: 5%;
+    position: absolute;
+  }
+  h1{
+    background-color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .container{
+    margin:1rem;
+    padding:0.5rem;
+    line-height:1.5rem;
+  }
+  th{
+    padding:0.5rem;
+  }
+  td{
+    padding:0.3rem 0.5rem;
+  }
+</style>
