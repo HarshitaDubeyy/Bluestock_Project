@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign In - Bluestock</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <section class="container forms">
+        <div class="form login">
+            <div class="form-content">
+    <div class="auth-container">
+        <form method="post" class="auth-form">
+            {% csrf_token %}
+            <img src="/static/images/site_logo.png" alt="Bluestock Logo" class="logo">
+            
+            <div class="field input-field">
+                <label for="email">Email Address</label>
+                <input type="email" placeholder="Email" class="input">
+            </div>
+            <br>
+            <div class="field input-field">
+                <label for="password">Password</label>
+                <a href="{% url 'password_reset' %}" class="forgot-pass">Forgot Password?</a>
+                <input type="password" id="password" class="password" placeholder="Enter your password">
+                <i class="fa-regular fa-eye-slash" id="togglePassword1"></i>          
+            </div>
+            <br>
+            <br>
+            
+            <label class="container2">Keep me signed in
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <div class="recaptcha-container">
+                <div class="g-recaptcha" data-sitekey="6LfuixcqAAAAAKp-Kf8UXZV97X7G6IAaJp0uLDS8"></div>
+            </div>
+            <div class="field button-field">
+                <button>Login</button>
+            </div>
+            
+               
+               
+            </div>
+            <div class="line"></div>
+            <div class="media-options">
+                <a href="#" class="field google">
+                    <img src="/static/images/google.webp" alt="" class="google-img">
+                    <span>Continue with Google</span>
+                </a>
+            </div>
+
+            <div class="form-link">
+                <span>Don't have an account? <a href="{% url 'signup' %}" class="link signup-link">Create an account</a></span>
+            </div>
+        </form>
+    </div>
+    </div>
+    </div>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
+    <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+
+    
+    </section>
+   
+</body>
+</html>
