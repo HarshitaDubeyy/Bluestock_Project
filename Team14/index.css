@@ -1,0 +1,507 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:Arial;
+}
+/* Navbar */
+.navbar{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    border-bottom: 1px rgb(189, 185, 185) solid;
+    align-items: center;
+}
+.icon{
+    height: 55px;
+    width: 55px;
+    background-image: url(Rectangle\ 13.png);
+    background-size: cover;
+}
+.name{
+    height: 19px;
+    width: 150px;
+    background-image:url(BLUESTOCK.png);
+    background-size: cover;
+    margin-left: 10px;
+}
+.tasks{
+    color: grey;
+    display: flex;
+    width: 600px;
+    background-color: white;
+    justify-content: space-evenly;
+}
+.task2{
+    font-size: 0.8rem;
+    background-color: white;
+    font-weight: bold;
+}
+.signin{
+    margin-left: 225px;
+    font-size: 0.8rem;
+    color: grey;
+    background-color: white;
+}
+.signup{
+    height: 40px;
+    padding-left:10px ;
+    padding-right:10px ;
+    font-size: 1rem;border: 1px solid transparent;
+    color: white;
+    background-color: rgb(17, 96, 255);
+    border-radius: 5px;
+    position: absolute;
+    right: 50px;
+}
+/* Heading */
+.main{
+    background-color: #f7f5f4;
+}
+.bar{
+    display: flex;
+    flex-direction: column;
+    margin-left: 38px;
+    padding-top: 10px;
+}
+.L1{
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.T0{
+    color: rgb(102, 55, 255);
+    font-size: 0.7rem;
+}
+.T1{
+    color: black(255, 255, 255);
+    font-size:0.7rem;
+}
+
+.T2{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.T3{
+    font-size:0.7rem;
+}
+/* IPOs */
+.R1{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.BOX1{
+    height:300px;
+    width: 375px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+.D1{
+    border-radius:10px;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    background-color: white;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+.com-icon1{
+    background-image:url(Novs_icon.png);
+    height: 45px;
+    width: 105px;
+    background-size:cover;
+    margin-right: 40px;
+}
+.comp{
+    color: #4850eb;
+    font-size: 1.1rem;
+}
+.P1{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    color: grey;
+    font-size: 0.75rem;
+}
+.P2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.B1{
+    height: 30px;
+    width: 70px;
+    font-size: 0.85rem;
+    color: #4850eb;
+    border: 1px #4850eb solid;
+    border-radius: 4px;
+    position: relative;
+    left:30px;
+    top: 20px;
+    background-color: white;
+}
+.B2{
+    height: 30px;
+    width: 70px;
+    font-size: 0.85rem;
+    background-color: #ef5335;
+    color: white;
+    border-radius: 4px;
+    position: relative;
+    left:30px;
+    top: 20px;
+    border: 1px solid transparent;
+}
+.BOX2{
+    height:300px;
+    width: 375px;
+    background-color: white;
+    border-radius: 10px;
+}
+.com-icon2{
+    background-image:url(Epack_Icon.png);
+    height: 60px;
+    width: 60px;
+    background-size:cover;
+    margin-right: 40px;
+}
+.BOX3{
+    height:300px;
+    width: 375px;
+    background-color: white;
+    border-radius: 10px;
+}
+.com-icon3{
+    background-image:url(RK.png);
+    height: 45px;
+    width: 105px;
+    background-size:cover;
+    margin-right: 40px;
+}
+.R2{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.BOX4{
+    height:300px;
+    width: 375px;
+    background-color: white;
+    border-radius: 10px;
+}
+.com-icon4{
+    background: url(OYO.png);
+    background-size: cover;
+    height: 40px;
+    width: 70px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+.BOX5{
+    height:300px;
+    width: 375px;
+    background-color: white;
+    border-radius: 10px;
+}
+.com-icon5{
+    background-image:url(Boat.png);
+    height: 45px;
+    width: 80px;
+    background-size:cover;
+    margin-right: 40px;
+}
+.BOX6{
+    height:300px;
+    width: 375px;
+    background-color: white;
+    border-radius: 10px;
+}
+.com-icon6{
+    background-image:url(Kids.png);
+    height: 45px;
+    width: 50px;
+    background-size:cover;
+    margin-right: 40px;
+}
+.R3{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.BOX7{
+    height:300px;
+    width: 375px;
+    background-color: white;
+    border-radius: 10px;
+}
+.com-icon7{
+    background-image:url(OLA.png);
+    height: 45px;
+    width: 105px;
+    background-size:cover;
+    margin-right: 40px;
+}
+.BOX8{
+    height:300px;
+    width: 375px;
+    background-color: white;
+    border-radius: 10px;
+}
+.com-icon8{
+    background-image:url(MObi.png);
+    height: 50px;
+    width: 55px;
+    background-size:cover;
+    margin-right: 40px;
+}
+.BOX9{
+    height:300px;
+    width: 375px;
+    background-color: white;
+    border-radius: 10px;
+}
+.com-icon9{
+    background-image:url(IXIGO.png);
+    height: 45px;
+    width: 105px;
+    background-size:cover;
+    margin-right: 40px;
+}
+.R4{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.BOX10{
+    height:300px;
+    width: 375px;
+    background-color: white;
+    border-radius: 10px;
+}
+.com-icon10{
+    background-image:url(CMR.png);
+    height: 45px;
+    width: 105px;
+    background-size:cover;
+    margin-right: 40px;
+}
+.BOX11{
+    height:300px;
+    width: 375px;
+    background-color: white;
+    border-radius: 10px;
+}
+.com-icon11{
+    background-image:url(Well.png
+    );
+    height: 45px;
+    width: 105px;
+    background-size:cover;
+    margin-right: 40px;
+}
+.BOX12{
+    height:300px;
+    width: 375px;
+    background-color: white;
+    border-radius: 10px;
+}
+.com-icon12{
+    background-image:url(PKH.png);
+    height: 45px;
+    width: 105px;
+    background-size:cover;
+    margin-right: 40px;
+}
+/* QUESTIONS */
+.question{
+    margin-top: 100px;
+    margin-left: 38px;
+}
+.ques-H1{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.ques-H2{
+    font-size:0.8rem;
+}
+.Qs{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.Q1{
+    display:flex;
+    align-items: center;
+    padding-left: 20px ;
+    margin-bottom: 30px;
+    height: 50px;
+    width: 95%;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+}
+.dropbtn {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 4px;
+    color: #5C8BFE;
+    font-weight: bold;
+    padding: 12px;
+    font-size: 1.2rem;
+    border: none;
+}
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    width: 700px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {background-color:white;}
+  .dropdown:hover .dropdown-content {display: block;}
+  /* Footer */
+  .foot-body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-left: 50px;
+}
+
+.column {
+    text-align: left;
+    margin-right: 20px;
+    font-size: 12px;
+    opacity: 0.8; /* add a little transparency to the text */
+}
+.column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    opacity: 0.8; /* add a little transparency to the text */
+}
+.column li {
+    margin-bottom: 10px;
+    font-size: 12px;
+    opacity: 0.8; /* add a little transparency to the text */
+}
+.logo-container {
+    margin-right: 150px;
+}
+.logo h1 {
+font-size: 20px; /* increase the font size of the h1 text */
+font-weight: bold; /* make the text bold */
+margin-bottom: 5px; /* add some space between the text and the logo */
+}
+
+.social-links {
+display: flex;
+justify-content: center;
+margin-bottom: 10px;
+}
+
+.social-links a {
+margin-right: 10px;
+}
+.social-links img {
+width: 32px; /* increase the width to 30px */
+height: 32px; /* increase the height to 30px */
+margin-right: 0px;
+}
+
+.logo {
+display: flex;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.logo img {
+width: 50px;
+margin: 0;
+display: flex;
+display: flex;
+align-items: center;
+
+}
+
+.footer-text {
+text-align: left;
+margin-bottom: 20px;
+}
+
+.footer-text p {
+margin-bottom: 10px;
+}
+
+.content {
+text-align: left;
+}
+
+.content p {
+margin-bottom: 20px;
+}
+.startup-india-logo {
+width: 250px;
+height: 80px;
+margin: 0;
+vertical-align: middle;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    font-size: 14px;
+    opacity: 0.8; /* add a little transparency to the text */
+}
+
+.footer p {
+    margin-bottom: 0;
+}
+
+.footer-text p {
+   font-size: 14px; /* increase the font size to 18px */
+   font-family: 'Poppins', sans-serif; /* use Poppins font family */
+   opacity: 0.8; /* add a little transparency to the text */
+   margin-bottom: 10px;
+}
+
+.content p {
+font-size: 14px; /* increase the font size to 18px */
+font-family: 'Poppins', sans-serif; /* use Poppins font family */
+opacity: 0.8; /* add a little transparency to the text */
+margin-bottom: 20px;
+}
